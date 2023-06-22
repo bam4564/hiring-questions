@@ -5,7 +5,7 @@ Background
 This is some code that I took from the backend and modified a bit to simplify for the 
 purposes of using it as an example. Here is some useful context 
 
-- Our backend is implemented as a microservices architeccture consisting of the following services. 
+- Our backend is implemented as a microservices architecture consisting of the following services. 
 Each service is deployed in its own docker container. 
   - Postgres Database
     - Has a single deployed instance. 
@@ -110,7 +110,7 @@ const handler = async ({ forceRefresh, token, startTimestamp }: { forceRefresh: 
 /*
 Questions  
 ------------------------------------------------------------------------
-1. It is possible for the condition on line 77 to be true in some cases? What might these cases be? 
+1. It is possible for the condition on line 77 to be true in some cases. What might these cases be? 
 - Hints
   - This code is running within the worker serivice. Review the details of how this service operates. 
   - Think about the different ways this job handler can be triggered. 
